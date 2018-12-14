@@ -1,0 +1,22 @@
+$to=fareed543@gmail.com;
+$subject="Fareed wrote on Contact Form";
+
+$message = "<html><head>
+<title>Title of email</title>
+</head>
+<body>
+   <style>td { font-family:verdana  font-size:13px  }</style>  
+   <center>  
+
+
+
+
+   </center>  
+</body>
+</html>";
+
+$header  = 'MIME-Version: 1.0' . "\r\n";
+$header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$header .= 'From: Jobshunter.in <fareed@jobshunter.in>' . "\r\n";
+$sentmail = mail($to,$subject,$message,$header);
+mail($to $subject $message $header )

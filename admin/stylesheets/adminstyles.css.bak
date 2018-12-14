@@ -1,0 +1,377 @@
+/**************** Body and tag styles ****************/
+
+*{margin:0; padding:0;}
+
+body, html{
+font:11px  Tahoma, Verdana, Arial, Helvetica, sans-serif;
+background: #fbfbfb;
+line-height:16px;
+color:#666666;
+padding:0;
+margin:0;
+}
+
+h1, h2, h3, h4, h5, h6,h7{margin:0; padding:0;}
+
+
+h4{
+font-family: Arial, Helvetica, sans-serif;
+color:#000;
+font-size:1.5em;
+padding-top:10px;
+float:left;
+font-weight:bold;
+height:60px;
+}
+a{
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+background-color:inherit;
+font-size:11px;
+}
+
+a:hover{color:#000000; text-decoration:none; background-color:inherit;}
+/******header starts******/
+#header{
+
+background:#faf6f7  repeat-x top center;
+font: Tahoma, Verdana, Arial, Helvetica, sans-serif 11px;
+color:#ffffff;
+height:95px;
+text-align:center;
+vertical-align:middle;
+
+z-index:1;
+}
+
+#logo{
+background: url(../images/logo.png) no-repeat;
+width:400px;
+height:90px;
+margin:0px 0px 0px 20px;
+float:left;
+}
+
+#logoright{
+float:right;
+width:auto;
+background: url(../images/controlpanel_icon.jpg) no-repeat top left;
+margin-right:30px;
+margin-top:20px;
+font: Georgia, "Times New Roman", Times, serif;
+padding-left:55px;
+font-size:24px;
+color:#000;
+font-weight:bold;
+padding-top:20px;
+padding-bottom:10px;
+
+}
+
+#navbg{
+width:100%;
+background:#15b9f0 repeat-x top left;
+height:37px;
+border-top: #9b3401 1px solid;
+border-bottom: #9b3401 1px solid;
+margin:0 0px;
+float:left;
+
+}
+
+/******main navigation css is in chromestyle.css******/
+
+#navright{
+float:right;
+width:auto;
+padding-right:15px;
+margin-top:10px;
+}
+
+/******header ends******/
+
+/******Footer starts******/
+
+#footer{
+
+background:#fbfbfb url(images/powered_img.jpg) no-repeat right ;
+border-top:#cccccc 1px solid;
+font: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+color:#085198;
+height:24px;
+padding-top:5px;
+text-align:center;
+vertical-align:middle;
+font-size:11px;
+
+}
+/******Footer ends******/
+
+
+/******body starts******/
+
+#container{
+text-align:left;
+background:#ffffff;
+color:#606060;
+margin:0 auto 0 auto;
+height:100%;
+background:#ffffff url(images/mainbody_bg.jpg) repeat-x top left;
+
+}
+#mainbox{
+background:#fbfbfb;
+border: 1px solid #e1e1e1;
+height:auto;
+padding:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.link{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#064787;
+text-decoration:none;
+}
+
+.link:hover{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000000;
+text-decoration:none;
+}
+
+.link1{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#064787;
+text-decoration:none;
+font-weight:normal;
+}
+
+.link1:hover{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000000;
+text-decoration:none;
+font-weight:normal;
+}
+
+.link3{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000000;
+text-decoration:none;
+font-weight:normal;
+font-weight:bold;
+}
+
+.link3:hover{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#0A69C7;
+text-decoration:none;
+font-weight:normal;
+font-weight:bold;
+}
+
+.link4{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#0A69C7;
+text-decoration:none;
+font-weight:normal;
+border-bottom:1px dashed #333333;
+
+}
+
+.link4:hover{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#333333;
+text-decoration:none;
+font-weight:normal;
+border-bottom:1px dashed #0A69C7;
+
+}
+
+.button {
+	background-color: #f7f7f7;
+	border: 1px solid #0A69C7;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #0A69C7;
+	text-decoration: none;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.pagingbold{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#085198;
+font-weight:bold;
+
+}
+
+.form{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#333333;
+border: 1px solid #999999;
+}
+
+
+.verdana12bold{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+}
+.greybrdr{
+border:1px solid #cccccc;
+}
+
+.boldtitle{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#333333;
+font-weight:bold;
+}
+
+/******body ends******/
+
+/*icons start*/
+#cpanel {  text-align: center;  vertical-align: middle; }
+
+#cpanel div.icon   { margin: 3px; }
+#cpanel div.icon a { 
+	display: block; float: left;
+	height: 97px !important;
+	height: 100px; 
+	width: 108px !important;
+	width: 110px; 
+	vertical-align: middle; 
+	text-decoration : none;
+	border: 1px solid #DDD;
+	padding: 2px 5px 1px 5px;
+	font-weight:normal;
+	font-size:11px;
+}
+
+#cpanel div.icon a:link    {  color : #0A69C7; font-size:11px;  }
+#cpanel div.icon a:hover   { 
+	color : #0A69C7; 
+	font-weight:normal;
+	background-color: #DAEDFF;  
+	border: 1px solid #0A69C7;
+	padding: 3px 4px 0px 6px; 
+}
+#cpanel div.icon a:active  {  color : #0A69C7;  }
+#cpanel div.icon a:visited {  color : #0A69C7;  }
+
+#cpanel div.icon img { margin-top: 13px; }
+#cpanel div.icon span { display: block; padding-top: 3px;}
+
+
+/*inner icons*/
+
+.icontable{
+background:#F1F3F5;
+border-bottom:1px solid #d1d1d1;
+}
+
+TABLE#toolbar {
+	MARGIN: 3px 10px
+}
+TABLE#toolbar A.toolbar {
+	BORDER: #ddd 1px solid; PADDING-RIGHT: 1px; DISPLAY: block; PADDING-LEFT: 1px; PADDING-BOTTOM: 2px; WIDTH: 55px; 
+	COLOR: #0A69C7; PADDING-TOP: 2px; TEXT-DECORATION: none; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; font-weight:normal;
+}
+TABLE#toolbar A.toolbar:hover {
+	BORDER: #0A69C7 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; COLOR: #0A69C7; PADDING-TOP: 3px;  BACKGROUND-COLOR: #DAEDFF;
+}
+TABLE#toolbar A.toolbar:active {
+	COLOR: #ff9900
+}
+
+/*inner icons ends here*/
+
+
+
+/*icons end*/
+.maintext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+}
+
+.innerpageheading{
+font-family:Arial, Helvetica, sans-serif;
+color:#085198;
+font-size:20px;
+width:auto;
+font-weight:bold;
+}
+.innerpageheading1{
+font-family:Arial, Helvetica, sans-serif;
+color:#085198;
+font-size:16px;
+width:auto;
+font-weight:bold;
+}
+.tableheading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+}
+.logintext {
+
+font-family:Geneva, Arial, Helvetica, sans-serif;
+color:#085198;
+font-size:22px;
+width:auto;
+font-weight:bold;
+}
+#loginbox {
+
+background:#fbfbfb;
+border: 1px solid #C5C5C5;
+height:auto;
+padding:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+.marqueetext {
+
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#FFFFFF;
+font-weight:bold;
+}
+.form1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+}

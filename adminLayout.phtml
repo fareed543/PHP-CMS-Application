@@ -1,0 +1,95 @@
+<?php
+	$act=new Model_Adminaction();
+	$act_ext=new Model_Adminextaction();
+ 	if($_REQUEST['type']==''){?>
+<div class="container_12">
+           <div style="clear:both;"></div>
+            <div class="grid_12">
+  				<?
+					if($_REQUEST['msg']!=""){?>
+				<span class="notification n-error"><?=$_REQUEST['msg']?></span>
+				<?}?>
+
+               
+
+
+                <!-- Example table -->
+                <div class="module">
+                	<h2><span><?=$this->actionTitle." [".$this->total_count."]"?></span></h2>
+
+                    <div class="module-table-body">
+                    	<form name="frmMain" id="frmMain" method="post" action="<?php echo ADMIN_URL_CONTROLLER.$this->actionTitle?>">
+                        <table id="myTable" class="tablesorter">
+                   	  <thead>
+                                <tr>
+								  <th align="center" style="width:5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#</th>
+								  <th style="width:15%"><?php echo $act_ext->getSortLable(array("disType"=>$this->disType, "sortby"=>"admin_name", "page"=>$_REQUEST['page'] ,"file"=>"administrator" ,"label"=>"Layout Name"));?></th>
+								 
+								
+								  <th style="width:5%"><?php echo $act_ext->getSortLable(array("disType"=>$this->disType, "sortby"=>"status", "page"=>$_REQUEST['page'] ,"file"=>"administrator" ,"label"=>"Status"));?></th>
+								 
+								 
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td class="addcolorne">1</td>
+                                <td align="center" class="addcolorne"><?=$i?>Latest Videos</td>
+                                 
+								 
+								 <td class="addcolorne"><a href='<?=$this->url.'?venable='.$this->vuid;?>'><?php echo $this->vresult=='1'?'Enable':'Disable';?></a></td>
+								
+								
+
+                                </td>
+                              </tr>
+                                <tr>
+                                    <td class="">2</td>
+                                <td align="center" class=""><?=$i?>Image Gallery</td>
+                                 
+								 
+								 <td class=""><a href='<?=$this->url.'?ienable='.$this->iuid;?>'><?php echo $this->iresult=='1'?'Enable':'Disable';?>></td>
+								
+								
+
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td class="addcolorne">3</td>
+                                <td align="center" class="addcolorne"><?=$i?>Audio</td>
+                                 
+								 
+								 <td class="addcolorne"><a href='<?=$this->url.'?genable='.$this->guid;?>'><?php echo $this->gresult=='1'?'Enable':'Disable';?></td>
+								
+								
+
+                                </td>
+                              </tr>
+                                
+                                
+					
+
+                            </tbody>
+                        </table>
+
+						<input type="hidden" name="page" id="page" value="<?php echo $this->page;?>">
+                        <div class="table-apply">
+                              <?$act->fnmultipleactdropdown(array('Del'=>'Delete'));?>
+                            </form>
+                        </div>
+                        <div style="clear: both"></div>
+                     </div>
+                </div>
+
+                <?=$this->view_pagination;?>
+			</div>
+             <div class="grid_6">
+		  </div>
+          <div style="clear:both;"></div>
+          <div style="clear:both;"></div>
+          <div style="clear:both;"></div>
+        </div>
+		<?php }
+                
+                ?>

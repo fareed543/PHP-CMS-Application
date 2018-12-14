@@ -1,0 +1,99 @@
+.chromestyle{
+float:left;
+font-weight: normal;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+font-size:11px;
+}
+
+.chromestyle ul{
+width:auto; margin:0; padding:0;
+/*background: url(chromebg.gif) center center repeat-x; THEME CHANGE HERE*/
+padding: 4px 4px;
+margin: 0;
+margin-top:5px;
+text-align: left; /*set value to "left", "center", or "right"*/
+}
+
+.chromestyle ul li{
+display: inline;
+}
+
+
+.chromestyle ul li a{
+color: #ffffff;
+padding: 4px 12px;
+margin: 0;
+padding-bottom:14px;
+text-decoration: none;
+background:url(../images/nav_bullet.gif) no-repeat 3px 8px;
+/*border-right: 1px solid #DADADA;*/
+}
+
+.chromestyle ul li a:hover{
+background:url(../images/nav_bullet1.gif) no-repeat  1px 10px; /*THEME CHANGE HERE*/
+}
+
+.chromestyle ul li a[rel]:after{ /*HTML to indicate drop down link*/
+
+background:url(../images/nav_bullet1.gif) no-repeat  5px 8px;
+/*content: " " url(downimage.gif); /*uncomment this line to use an image instead*/
+}
+
+
+/* ######### Style for Drop Down Menu ######### */
+.dropmenudiv{
+position:absolute;
+top:15px;
+/*border: 1px solid #ffffff;
+border: 1px solid #BBB; THEME CHANGE HERE
+border-bottom-width: 0;*/
+font: Verdana;
+line-height:18px;
+z-index:100;
+font-size:11px;
+background-color:#F1F3F5;
+width: auto;
+visibility: hidden;
+text-align:left;
+display: block;
+cursor:pointer;
+/*filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); Add Shadow in IE. Remove if desired*/
+}
+
+
+.dropmenudiv a{
+width: auto;
+display: block;
+text-indent: 3px;
+/*border-bottom: 1px solid #BBB; THEME CHANGE HERE*/
+padding: 2px 0 2px;
+text-decoration: none;
+font-weight: normal;
+color: black;
+font-size:14px;
+cursor:pointer;
+border: 1px solid #D1D1D1;
+border-top:1px solid #F1F3F5;
+padding-right:10px;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+
+cursor:pointer
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-color: #F5FAFF;
+border:1px solid #0A69C7;
+}
+
+
+
+
